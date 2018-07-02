@@ -9,7 +9,7 @@ atn-wallet forks [metamask](metamask.md) to reuse the most features
 - [ ] adding ATN networks(testnet)
 - [ ] change eth to atn 
 - [ ] change eth_oracle to atn_oracle(option)
-- [x] emit event when account changes 
+- [ ] emit event when account changes 
 
 
 ### UI design
