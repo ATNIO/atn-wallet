@@ -2,6 +2,8 @@
 
 atn-wallet forks [metamask](metamask.md) to reuse the most features
 
+Node version recommand: 8.11.3
+
 ## TODO List
 
 - [x] register coin type for [BIP-0044](https://github.com/satoshilabs/slips/blob/master/slip-0044.md) 
@@ -9,7 +11,7 @@ atn-wallet forks [metamask](metamask.md) to reuse the most features
 - [ ] adding ATN networks(testnet)
 - [ ] change eth to atn 
 - [ ] change eth_oracle to atn_oracle(option)
-- [ ] emit event when account changes 
+- [x] emit event when account changes 
 
 
 ### UI design

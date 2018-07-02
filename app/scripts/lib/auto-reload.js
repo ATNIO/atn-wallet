@@ -22,6 +22,7 @@ function setupDappAutoReload (web3, observable) {
     set: (_web3, key, value) => {
       // set value normally
       _web3[key] = value
+      return true
     },
   })
 
