@@ -5,7 +5,6 @@ const log = require('loglevel')
 const LocalMessageDuplexStream = require('post-message-stream')
 const setupDappAutoReload = require('./lib/auto-reload.js')
 const MetamaskInpageProvider = require('./lib/inpage-provider.js')
-const EventEmitter = require('events');
 restoreContextAfterImports()
 
 log.setDefaultLevel(process.env.METAMASK_DEBUG ? 'debug' : 'warn')
@@ -63,18 +62,9 @@ global.web3 = new Proxy(web3, {
 })
 */
 
-// define a notifier 
-class Notifier extends EventEmitter {}
-const notifier = new Notifier();
-
-// inject to web3
-if (!Reflect.has(global.web3, 'notifier')){
-  global.web3['notifier'] = notifier	
-}
 // set web3 defaultAccount
 inpageProvider.publicConfigStore.subscribe(function (state) {
   web3.eth.defaultAccount = state.selectedAddress
-  web3.notifier.emit('account-changed', state.selectedAddress)  
 })
 
 // need to make sure we aren't affected by overlapping namespaces
