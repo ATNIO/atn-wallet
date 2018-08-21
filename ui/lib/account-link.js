@@ -12,7 +12,7 @@ module.exports = function (address, network) {
       link = `https://ropsten.etherscan.io/address/${address}`
       break
     case 4: // rinkeby test net
-      link = `https://rinkeby.etherscan.io/address/${address}`
+      link = `http://118.31.18.101:4065/account/${address}`
       break
     case 42: // kovan test net
       link = `https://kovan.etherscan.io/address/${address}`
