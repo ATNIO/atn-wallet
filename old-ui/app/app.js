@@ -297,7 +297,7 @@ App.prototype.renderNetworkDropdown = function() {
                 },
             }, [
                 h('.menu-icon.golden-square'),
-                'ATN',
+                'ATN Test Network',
                 // providerType === 'atn' ? h('.check', '✓') : null,
                 activeNetwork === 'http://119.3.63.215:4545' && providerType === 'rpc' ? h('.check', '✓') : null,
             ]

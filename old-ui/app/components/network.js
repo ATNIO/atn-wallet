@@ -20,7 +20,6 @@ Network.prototype.render = function() {
         providerName = null
     }
     let iconName, hoverText
-
     if (networkNumber === 'loading') {
         return h('span.pointer', {
             className: props.onClick && 'pointer',
@@ -53,8 +52,11 @@ Network.prototype.render = function() {
         hoverText = 'Kovan Test Network'
         iconName = 'kovan-test-network'
     } else if (providerName === 'rinkeby') {
-        hoverText = 'ATN Test Network'
+        hoverText = 'rinkeby Test Network'
         iconName = 'rinkeby-test-network'
+    } else if (networkNumber === '17') {
+        hoverText = 'ATN Test Network'
+        iconName = 'atn-test-network'
     } else {
         hoverText = 'Unknown Private Network'
         iconName = 'unknown-private-network'
@@ -110,6 +112,17 @@ Network.prototype.render = function() {
                                 'ATN Test Net'),
                             props.onClick && h('i.fa.fa-caret-down.fa-lg'),
                         ])
+                  case 'atn-test-network':
+                    return h('.network-indicator', [
+                      h('.menu-icon.golden-square'),
+                      h('.network-name', {
+                          style: {
+                            color: '#e7a218',
+                          }
+                        },
+                        'ATN Test Network'),
+                      props.onClick && h('i.fa.fa-caret-down.fa-lg'),
+                    ])
                     default:
                         return h('.network-indicator', [
                             h('i.fa.fa-question-circle.fa-lg', {
