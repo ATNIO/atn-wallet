@@ -142,6 +142,7 @@ BuyButtonSubview.prototype.primarySubview = function() {
             // Ropsten, ATN, Kovan
         case '3':
         case '4':
+        case '17':
         case '42':
             const networkName = getNetworkDisplayName(network)
             const label = `${networkName} Test Faucet`

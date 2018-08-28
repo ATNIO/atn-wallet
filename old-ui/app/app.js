@@ -257,68 +257,51 @@ App.prototype.renderNetworkDropdown = function() {
         },
     }, [
 
-        h(
-            DropdownMenuItem, {
-                key: 'main',
-                closeMenu: () => this.setState({ isNetworkMenuOpen: !isOpen }),
-                // onClick: () => props.dispatch(actions.setProviderType('mainnet')),
-                style: {
-                    fontSize: '18px',
-                },
-            }, [
-                h('.menu-icon.diamond'),
-                'Main Ethereum Network',
-                providerType === 'mainnet' ? h('.check', '✓') : null,
-            ]
-        ),
-
-        // h(
-        //   DropdownMenuItem,
-        //   {
-        //     key: 'ropsten',
-        //     closeMenu: () => this.setState({ isNetworkMenuOpen: !isOpen }),
-        //     onClick: () => props.dispatch(actions.setProviderType('ropsten')),
-        //     style: {
-        //       fontSize: '18px',
-        //     },
-        //   },
-        //   [
-        //     h('.menu-icon.red-dot'),
-        //     'Ropsten Test Network',
-        //     providerType === 'ropsten' ? h('.check', '✓') : null,
-        //   ]
-        // ),
-
         // h(
         //     DropdownMenuItem, {
-        //         key: 'kovan',
+        //         key: 'main',
         //         closeMenu: () => this.setState({ isNetworkMenuOpen: !isOpen }),
-        //         onClick: () => props.dispatch(actions.setProviderType('kovan')),
+        //         onClick: () => props.dispatch(actions.setProviderType('mainnet')),
         //         style: {
         //             fontSize: '18px',
         //         },
         //     }, [
-        //         h('.menu-icon.hollow-diamond'),
-        //         'Kovan Test Network',
-        //         providerType === 'kovan' ? h('.check', '✓') : null,
+        //         h('.menu-icon.diamond'),
+        //         'Main Ethereum Network',
+        //         providerType === 'mainnet' ? h('.check', '✓') : null,
         //     ]
         // ),
-
+        //
+        //
+        // h(
+        //     DropdownMenuItem, {
+        //         key: 'rinkeby',
+        //         closeMenu: () => this.setState({ isNetworkMenuOpen: !isOpen }),
+        //         onClick: () => props.dispatch(actions.setProviderType('rinkeby')),
+        //         style: {
+        //             fontSize: '18px',
+        //         },
+        //     }, [
+        //         h('.menu-icon.golden-square'),
+        //         'ATN Test Network',
+        //         providerType === 'rinkeby' ? h('.check', '✓') : null,
+        //     ]
+        // ),
         h(
             DropdownMenuItem, {
-                key: 'rinkeby',
+                key: 'http://119.3.63.215:4545',
                 closeMenu: () => this.setState({ isNetworkMenuOpen: !isOpen }),
-                onClick: () => props.dispatch(actions.setProviderType('rinkeby')),
+                onClick: () => props.dispatch(actions.setRpcTarget('http://119.3.63.215:4545')),
                 style: {
                     fontSize: '18px',
                 },
             }, [
                 h('.menu-icon.golden-square'),
-                'ATN Test Network',
-                providerType === 'rinkeby' ? h('.check', '✓') : null,
+                'ATN',
+                // providerType === 'atn' ? h('.check', '✓') : null,
+                activeNetwork === 'http://119.3.63.215:4545' && providerType === 'rpc' ? h('.check', '✓') : null,
             ]
         ),
-
         h(
             DropdownMenuItem, {
                 key: 'default',
@@ -629,8 +612,8 @@ App.prototype.renderCustomOption = function(provider) {
     switch (rpcTarget) {
 
         case 'http://localhost:8545':
+        case 'http://119.3.63.215:4545':
             return null
-
         default:
             return h(
                 DropdownMenuItem, {

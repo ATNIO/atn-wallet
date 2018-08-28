@@ -248,6 +248,10 @@ function currentProviderDisplay(metamaskState) {
             title = 'Current Network'
             value = 'ATN Test Network'
             break
+        case 'atn':
+          title = 'Current Network'
+          value = 'ATN'
+          break
 
         default:
             title = 'Current RPC'

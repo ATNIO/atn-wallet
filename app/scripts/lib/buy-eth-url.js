@@ -29,6 +29,9 @@ function getBuyEthUrl ({ network, amount, address }) {
     case '42':
       url = 'https://github.com/kovan-testnet/faucet'
       break
+    case '17':
+      url = 'http://119.3.63.215:4000/#faucet'
+      break
   }
   return url
 }

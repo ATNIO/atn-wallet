@@ -164,6 +164,9 @@ ConfigManager.prototype.getCurrentRpcAddress = function () {
     case 'rinkeby':
       return RINKEBY_RPC_URL
 
+    case 'atn':
+      return 'http://119.3.63.215:4545'
+
     default:
       return provider && provider.rpcTarget ? provider.rpcTarget : RINKEBY_RPC_URL
   }

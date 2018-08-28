@@ -3,13 +3,16 @@ const {
   RINKEBY,
   KOVAN,
   MAINNET,
+  ATN,
   ROPSTEN_CODE,
   RINKEYBY_CODE,
   KOVAN_CODE,
+  ATN_CODE,
   ROPSTEN_DISPLAY_NAME,
   RINKEBY_DISPLAY_NAME,
   KOVAN_DISPLAY_NAME,
   MAINNET_DISPLAY_NAME,
+  ATN_DISPLAY_NAME,
 } = require('./enums')
 
 const networkToNameMap = {
@@ -20,6 +23,7 @@ const networkToNameMap = {
   [ROPSTEN_CODE]: ROPSTEN_DISPLAY_NAME,
   [RINKEYBY_CODE]: RINKEBY_DISPLAY_NAME,
   [KOVAN_CODE]: KOVAN_DISPLAY_NAME,
+  [ATN_CODE]: ATN_DISPLAY_NAME,
 }
 
 const getNetworkDisplayName = key => networkToNameMap[key]
