@@ -15,8 +15,8 @@ log.setDefaultLevel(process.env.METAMASK_DEBUG ? 'debug' : 'warn')
 
 // setup background connection
 var metamaskStream = new LocalMessageDuplexStream({
-  name: 'inpage',
-  target: 'contentscript',
+  name: 'inpage2',
+  target: 'contentscript2',
 })
 
 // compose the inpage provider
@@ -26,7 +26,7 @@ var inpageProvider = new MetamaskInpageProvider(metamaskStream)
 // setup web3
 //
 
-if (typeof window.web3 !== 'undefined') {
+if (typeof window.atn3 !== 'undefined') {
   throw new Error(`MetaMask detected another web3.
      MetaMask will not work reliably with another web3 extension.
      This usually happens if you have two MetaMasks installed,

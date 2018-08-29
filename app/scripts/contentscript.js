@@ -47,10 +47,10 @@ function setupInjection () {
 function setupStreams () {
   // setup communication to page and plugin
   const pageStream = new LocalMessageDuplexStream({
-    name: 'contentscript',
-    target: 'inpage',
+    name: 'contentscript2',
+    target: 'inpage2',
   })
-  const pluginPort = extension.runtime.connect({ name: 'contentscript' })
+  const pluginPort = extension.runtime.connect({ name: 'contentscript2' })
   const pluginStream = new PortStream(pluginPort)
 
   // forward communication plugin->inpage
