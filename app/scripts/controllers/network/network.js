@@ -15,6 +15,7 @@ const {
   KOVAN,
   MAINNET,
   LOCALHOST,
+  ATN_TESTNET_URL,
 } = require('./enums')
 const LOCALHOST_RPC_URL = 'http://localhost:8545'
 const INFURA_PROVIDER_TYPES = [ROPSTEN, RINKEBY, KOVAN, MAINNET]
@@ -23,8 +24,12 @@ const env = process.env.METAMASK_ENV
 const METAMASK_DEBUG = process.env.METAMASK_DEBUG
 const testMode = (METAMASK_DEBUG || env === 'test')
 
+// const defaultProviderConfig = {
+//   type: testMode ? RINKEBY : MAINNET,
+// }
 const defaultProviderConfig = {
-  type: testMode ? RINKEBY : MAINNET,
+  type: 'rpc',
+  rpcTarget: ATN_TESTNET_URL,
 }
 
 module.exports = class NetworkController extends EventEmitter {
