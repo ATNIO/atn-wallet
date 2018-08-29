@@ -303,7 +303,7 @@ class PreferencesController {
     if (_url !== 'http://localhost:8545') {
       rpcList.push(_url)
     }
-    if (rpcList.length > 2) {
+    if (rpcList.length > 20) {
       rpcList.shift()
     }
     return Promise.resolve(rpcList)

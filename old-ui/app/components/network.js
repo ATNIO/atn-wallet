@@ -1,7 +1,7 @@
 const Component = require('react').Component
 const h = require('react-hyperscript')
 const inherits = require('util').inherits
-const {ATN_TESTNET_URL} = require('../../../app/scripts/controllers/network/enums')
+const {ATN, ATN_TESTNET_URL} = require('../../../app/scripts/controllers/network/enums')
 
 module.exports = Network
 
@@ -58,7 +58,7 @@ Network.prototype.render = function() {
     } else if (providerName === 'rinkeby') {
         hoverText = 'rinkeby Test Network'
         iconName = 'rinkeby-test-network'
-    } else if (networkNumber === '17' && rpcTarget == ATN_TESTNET_URL) {
+    } else if (networkNumber === '17' && rpcTarget === ATN_TESTNET_URL) {
         hoverText = 'ATN Test Network'
         iconName = 'atn-test-network'
     } else {

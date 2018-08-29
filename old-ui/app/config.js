@@ -9,6 +9,7 @@ const infuraCurrencies = require('./infura-conversion.json').objects.sort((a, b)
 const validUrl = require('valid-url')
 const exportAsFile = require('./util').exportAsFile
 const Modal = require('../../ui/app/components/modals/index').Modal
+const {ATN_TESTNET_URL} = require('../../app/scripts/controllers/network/enums')
 
 module.exports = connect(mapStateToProps)(ConfigScreen)
 
@@ -223,7 +224,7 @@ function currentConversionInformation(metamaskState, state) {
 function currentProviderDisplay(metamaskState) {
     var provider = metamaskState.provider
     var title, value
-
+    var rpcTarget = metamaskState.provider.rpcTarget
     switch (provider.type) {
 
         case 'mainnet':
@@ -243,16 +244,20 @@ function currentProviderDisplay(metamaskState) {
 
         case 'rinkeby':
             title = 'Current Network'
-            value = 'ATN Test Network'
+            value = 'rinkeby Test Network'
             break
         case 'atn':
           title = 'Current Network'
-          value = 'ATN'
+          value = 'ATN Test Network'
           break
-
         default:
-            title = 'Current RPC'
-            value = metamaskState.provider.rpcTarget
+            if (rpcTarget === ATN_TESTNET_URL) {
+              title = 'Current Network'
+              value = 'ATN Test Network'
+            } else {
+              title = 'Current RPC'
+              value = metamaskState.provider.rpcTarget
+            }
     }
 
     return h('div', [

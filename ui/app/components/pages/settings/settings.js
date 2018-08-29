@@ -142,6 +142,12 @@ class Settings extends Component {
         color = '#ebb33f'
         break
 
+      case 'atn':
+        title = this.context.t('currentNetwork')
+        value = this.context.t('atn')
+        color = '#ebb33f'
+        break
+
       default:
         title = this.context.t('currentRpc')
         value = provider.rpcTarget
