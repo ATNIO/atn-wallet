@@ -35,6 +35,7 @@ const HDCreateVaultComplete = require('./keychains/hd/create-vault-complete')
 const HDRestoreVaultScreen = require('./keychains/hd/restore-vault')
 const RevealSeedConfirmation = require('./keychains/hd/recover-seed/confirmation')
 const AccountDropdowns = require('./components/account-dropdowns').AccountDropdowns
+const { ATN_TESTNET_URL } = require('../../app/scripts/controllers/network/enums')
 
 module.exports = connect(mapStateToProps)(App)
 
@@ -289,9 +290,9 @@ App.prototype.renderNetworkDropdown = function() {
         // ),
         h(
             DropdownMenuItem, {
-                key: 'http://119.3.63.215:4545',
+                key: ATN_TESTNET_URL,
                 closeMenu: () => this.setState({ isNetworkMenuOpen: !isOpen }),
-                onClick: () => props.dispatch(actions.setRpcTarget('http://119.3.63.215:4545')),
+                onClick: () => props.dispatch(actions.setRpcTarget(ATN_TESTNET_URL)),
                 style: {
                     fontSize: '18px',
                 },
@@ -299,21 +300,7 @@ App.prototype.renderNetworkDropdown = function() {
                 h('.menu-icon.golden-square'),
                 'ATN Test Network',
                 // providerType === 'atn' ? h('.check', '✓') : null,
-                activeNetwork === 'http://119.3.63.215:4545' && providerType === 'rpc' ? h('.check', '✓') : null,
-            ]
-        ),
-        h(
-            DropdownMenuItem, {
-                key: 'default',
-                closeMenu: () => this.setState({ isNetworkMenuOpen: !isOpen }),
-                onClick: () => props.dispatch(actions.setProviderType('localhost')),
-                style: {
-                    fontSize: '18px',
-                },
-            }, [
-                h('i.fa.fa-question-circle.fa-lg.menu-icon'),
-                'Localhost 8545',
-                activeNetwork === 'http://localhost:8545' ? h('.check', '✓') : null,
+                activeNetwork === ATN_TESTNET_URL && providerType === 'rpc' ? h('.check', '✓') : null,
             ]
         ),
 
@@ -612,7 +599,7 @@ App.prototype.renderCustomOption = function(provider) {
     switch (rpcTarget) {
 
         case 'http://localhost:8545':
-        case 'http://119.3.63.215:4545':
+        case ATN_TESTNET_URL:
             return null
         default:
             return h(
@@ -642,7 +629,7 @@ App.prototype.getNetworkName = function() {
     } else if (providerName === 'kovan') {
         name = 'Kovan Test Network'
     } else if (providerName === 'rinkeby') {
-        name = 'ATN Test Network'
+        name = 'Rinkeby Test Network'
     } else {
         name = 'Unknown Private Network'
     }
