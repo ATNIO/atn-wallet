@@ -29,7 +29,6 @@ class CurrencyController {
       conversionRate: 0,
       conversionDate: 'N/A',
     }, opts.initState)
-    //console.log('---test2')
     this.store = new ObservableStore(initState)
   }
 
@@ -108,9 +107,7 @@ class CurrencyController {
     let currentCurrency
     try {
       currentCurrency = this.getCurrentCurrency()
-      //const response = await fetch(`https://api.infura.io/v1/ticker/eth${currentCurrency.toLowerCase()}`)
       const response = await fetch(`https://api.coinmarketcap.com/v1/ticker/atn`)
-      // const parsedResponse = await response.json()
       const parsedResponse = await response.json()
       if (currentCurrency=='usd'){
         this.setConversionRate(Number(parsedResponse[0].price_usd))
