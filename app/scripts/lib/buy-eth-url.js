@@ -1,3 +1,5 @@
+const {ATN_FAUCET_URL} = require('../controllers/network/enums')
+
 module.exports = getBuyEthUrl
 
 /**
@@ -30,7 +32,7 @@ function getBuyEthUrl ({ network, amount, address }) {
       url = 'https://github.com/kovan-testnet/faucet'
       break
     case '17':
-      url = 'http://119.3.63.215:4000/#faucet'
+      url = ATN_FAUCET_URL
       break
   }
   return url
