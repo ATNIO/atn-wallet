@@ -16,6 +16,7 @@ const KOVAN_DISPLAY_NAME = 'Kovan'
 const MAINNET_DISPLAY_NAME = 'Main Ethereum Network'
 const ATN_DISPLAY_NAME = 'ATN Network'
 
+const ATN_TESTNET_URL = 'http://119.3.63.215:4545'
 
 module.exports = {
   ROPSTEN,
@@ -33,4 +34,5 @@ module.exports = {
   KOVAN_DISPLAY_NAME,
   MAINNET_DISPLAY_NAME,
   ATN_DISPLAY_NAME,
+  ATN_TESTNET_URL,
 }
