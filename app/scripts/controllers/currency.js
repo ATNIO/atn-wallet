@@ -1,4 +1,4 @@
-  const ObservableStore = require('obs-store')
+const ObservableStore = require('obs-store')
 const extend = require('xtend')
 const log = require('loglevel')
 
@@ -16,19 +16,20 @@ class CurrencyController {
    * currentCurrency, conversionRate and conversionDate properties
    * @property {string} currentCurrency A 2-4 character shorthand that describes a specific currency, currently
    * selected by the user
-   * @property {number} conversionRate The conversion rate from ETH to the selected currency. 
+   * @property {number} conversionRate The conversion rate from ETH to the selected currency.
    * @property {string} conversionDate The date at which the conversion rate was set. Expressed in in milliseconds
-   * since midnight of January 1, 1970 
+   * since midnight of January 1, 1970
    * @property {number} conversionInterval The id of the interval created by the scheduleConversionInterval method.
    * Used to clear an existing interval on subsequent calls of that method.
    *
    */
   constructor (opts = {}) {
     const initState = extend({
-      currentCurrency: 'usd',
+      currentCurrency: 'cny',
       conversionRate: 0,
       conversionDate: 'N/A',
     }, opts.initState)
+    //console.log('---test2')
     this.store = new ObservableStore(initState)
   }
 
@@ -59,7 +60,7 @@ class CurrencyController {
   /**
    * A getter for the conversionRate property
    *
-   * @returns {string} The conversion rate from ETH to the selected currency. 
+   * @returns {string} The conversion rate from ETH to the selected currency.
    *
    */
   getConversionRate () {
@@ -80,7 +81,7 @@ class CurrencyController {
    * A getter for the conversionDate property
    *
    * @returns {string} The date at which the conversion rate was set. Expressed in milliseconds since midnight of
-   * January 1, 1970 
+   * January 1, 1970
    *
    */
   getConversionDate () {
@@ -107,10 +108,20 @@ class CurrencyController {
     let currentCurrency
     try {
       currentCurrency = this.getCurrentCurrency()
-      const response = await fetch(`https://api.infura.io/v1/ticker/eth${currentCurrency.toLowerCase()}`)
+      //const response = await fetch(`https://api.infura.io/v1/ticker/eth${currentCurrency.toLowerCase()}`)
+      const response = await fetch(`https://api.coinmarketcap.com/v1/ticker/atn`)
+      // const parsedResponse = await response.json()
       const parsedResponse = await response.json()
-      this.setConversionRate(Number(parsedResponse.bid))
-      this.setConversionDate(Number(parsedResponse.timestamp))
+      if (currentCurrency=='usd'){
+        this.setConversionRate(Number(parsedResponse[0].price_usd))
+      }else if (currentCurrency=='btc'){
+        this.setConversionRate(Number(parsedResponse[0].price_btc))
+      }else{
+        const resCny = await fetch(`http://free.currencyconverterapi.com/api/v5/convert?q=USD_CNY&compact=y`)
+        const parsedRespCny = await resCny.json()
+        this.setConversionRate(Number(parsedRespCny.USD_CNY.val)*Number(parsedResponse[0].price_usd))
+      }
+      this.setConversionDate(Number(parsedResponse[0].last_updated))
     } catch (err) {
       log.warn(`MetaMask - Failed to query currency conversion:`, currentCurrency, err)
       this.setConversionRate(0)

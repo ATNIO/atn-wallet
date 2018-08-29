@@ -23,7 +23,7 @@ FiatValue.prototype.render = function () {
 
   if (conversionRate !== 0) {
     fiatTooltipNumber = Number(splitBalance[0]) * conversionRate
-    fiatDisplayNumber = fiatTooltipNumber.toFixed(2)
+    fiatDisplayNumber = fiatTooltipNumber.toFixed(5)
   } else {
     fiatDisplayNumber = 'N/A'
     fiatTooltipNumber = 'Unknown'
