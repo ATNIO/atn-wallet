@@ -77,7 +77,7 @@ BuyButtonSubview.prototype.headerSubview = function() {
                         paddingTop: '4px',
                         paddingBottom: '4px',
                     },
-                }, 'Buy Eth'),
+                }, 'ATN FAUCET'),
             ]),
 
             // loading indication
