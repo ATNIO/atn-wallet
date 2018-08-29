@@ -283,7 +283,7 @@ App.prototype.renderNetworkDropdown = function() {
         //         },
         //     }, [
         //         h('.menu-icon.golden-square'),
-        //         'ATN Test Network',
+        //         'Ethereum Test Network',
         //         providerType === 'rinkeby' ? h('.check', '✓') : null,
         //     ]
         // ),

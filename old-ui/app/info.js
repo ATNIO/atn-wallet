@@ -46,7 +46,7 @@ InfoScreen.prototype.render = function () {
           // current version number
 
           h('.info.info-gray', [
-            h('div', 'Metamask'),
+            h('div', 'atn wallet'),
             h('div', {
               style: {
                 marginBottom: '10px',
@@ -54,40 +54,40 @@ InfoScreen.prototype.render = function () {
             }, `Version: ${version}`),
           ]),
 
-          h('div', {
-            style: {
-              marginBottom: '5px',
-            }},
-            [
-              h('div', [
-                h('a', {
-                  href: 'https://metamask.io/privacy.html',
-                  target: '_blank',
-                  onClick: (event) => { this.navigateTo(event.target.href) },
-                }, [
-                  h('div.info', 'Privacy Policy'),
-                ]),
-              ]),
-              h('div', [
-                h('a', {
-                  href: 'https://metamask.io/terms.html',
-                  target: '_blank',
-                  onClick: (event) => { this.navigateTo(event.target.href) },
-                }, [
-                  h('div.info', 'Terms of Use'),
-                ]),
-              ]),
-              h('div', [
-                h('a', {
-                  href: 'https://metamask.io/attributions.html',
-                  target: '_blank',
-                  onClick: (event) => { this.navigateTo(event.target.href) },
-                }, [
-                  h('div.info', 'Attributions'),
-                ]),
-              ]),
-            ]
-          ),
+          // h('div', {
+          //   style: {
+          //     marginBottom: '5px',
+          //   }},
+          //   [
+          //     h('div', [
+          //       h('a', {
+          //         href: 'https://metamask.io/privacy.html',
+          //         target: '_blank',
+          //         onClick: (event) => { this.navigateTo(event.target.href) },
+          //       }, [
+          //         h('div.info', 'Privacy Policy'),
+          //       ]),
+          //     ]),
+          //     h('div', [
+          //       h('a', {
+          //         href: 'https://metamask.io/terms.html',
+          //         target: '_blank',
+          //         onClick: (event) => { this.navigateTo(event.target.href) },
+          //       }, [
+          //         h('div.info', 'Terms of Use'),
+          //       ]),
+          //     ]),
+          //     h('div', [
+          //       h('a', {
+          //         href: 'https://metamask.io/attributions.html',
+          //         target: '_blank',
+          //         onClick: (event) => { this.navigateTo(event.target.href) },
+          //       }, [
+          //         h('div.info', 'Attributions'),
+          //       ]),
+          //     ]),
+          //   ]
+          // ),
 
           h('hr', {
             style: {
@@ -101,16 +101,9 @@ InfoScreen.prototype.render = function () {
               paddingLeft: '30px',
             }},
             [
-              h('div.fa.fa-support', [
-                h('a.info', {
-                  href: 'https://support.metamask.io',
-                  target: '_blank',
-                }, 'Visit our Support Center'),
-              ]),
-
               h('div', [
                 h('a', {
-                  href: 'https://metamask.io/',
+                  href: 'https://www.atn.io/',
                   target: '_blank',
                 }, [
                   h('img.icon-size', {
@@ -129,7 +122,7 @@ InfoScreen.prototype.render = function () {
               h('div', [
                 h('.fa.fa-twitter', [
                   h('a.info', {
-                    href: 'https://twitter.com/metamask_io',
+                    href: 'https://twitter.com/atn_io',
                     target: '_blank',
                   }, 'Follow us on Twitter'),
                 ]),
@@ -139,7 +132,7 @@ InfoScreen.prototype.render = function () {
                 h('a.info', {
                   target: '_blank',
                   style: { width: '85vw' },
-                  href: 'mailto:help@metamask.io?subject=Feedback',
+                  href: 'mailto:contact@atn.io?subject=Feedback',
                 }, 'Email us!'),
               ]),
             ]),
