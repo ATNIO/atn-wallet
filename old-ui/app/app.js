@@ -642,7 +642,7 @@ App.prototype.renderCommonRpc = function(rpcList, provider) {
     const rpcTarget = provider.rpcTarget
 
     return rpcList.map((rpc) => {
-        if ((rpc === 'http://localhost:8545') || (rpc === rpcTarget)) {
+        if ((rpc === 'http://localhost:8545') || (rpc === rpcTarget) || (rpc === ATN_TESTNET_URL)) {
             return null
         } else {
             return h(
