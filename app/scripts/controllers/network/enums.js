@@ -17,6 +17,7 @@ const MAINNET_DISPLAY_NAME = 'Main Ethereum Network'
 const ATN_DISPLAY_NAME = 'ATN Network'
 
 const ATN_TESTNET_URL = 'http://119.3.63.215:4545'
+const ATN_FAUCET_URL = 'http://119.3.63.215:4000/#faucet'
 
 module.exports = {
   ROPSTEN,
@@ -35,4 +36,5 @@ module.exports = {
   MAINNET_DISPLAY_NAME,
   ATN_DISPLAY_NAME,
   ATN_TESTNET_URL,
+  ATN_FAUCET_URL,
 }
