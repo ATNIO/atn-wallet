@@ -1,6 +1,7 @@
 const Component = require('react').Component
 const h = require('react-hyperscript')
 const inherits = require('util').inherits
+const {ATN_TESTNET_URL} = require('../../../app/scripts/controllers/network/enums')
 
 module.exports = Network
 
@@ -14,10 +15,13 @@ Network.prototype.render = function() {
     const props = this.props
     const networkNumber = props.network
     let providerName
+    let rpcTarget
     try {
         providerName = props.provider.type
+        rpcTarget = props.provider.rpcTarget
     } catch (e) {
         providerName = null
+        rpcTarget = null
     }
     let iconName, hoverText
     if (networkNumber === 'loading') {
@@ -54,7 +58,7 @@ Network.prototype.render = function() {
     } else if (providerName === 'rinkeby') {
         hoverText = 'rinkeby Test Network'
         iconName = 'rinkeby-test-network'
-    } else if (networkNumber === '17') {
+    } else if (networkNumber === '17' && rpcTarget == ATN_TESTNET_URL) {
         hoverText = 'ATN Test Network'
         iconName = 'atn-test-network'
     } else {
