@@ -11,6 +11,7 @@ const vreme = new (require('vreme'))()
 const Tooltip = require('./tooltip')
 const numberToBN = require('number-to-bn')
 const actions = require('../../../ui/app/actions')
+const {ATN_CODE, ATN_EXPLORER_API_URL} = require('../../../app/scripts/controllers/network/enums')
 
 const TransactionIcon = require('./transaction-list-item-icon')
 const ShiftListItem = require('./shift-list-item')
@@ -56,7 +57,7 @@ TransactionListItem.prototype.render = function () {
 
   let isLinkable = false
   const numericNet = parseInt(network)
-  isLinkable = numericNet === 1 || numericNet === 3 || numericNet === 4 || numericNet === 42
+  isLinkable = numericNet === 1 || numericNet === 3 || numericNet === 4 || numericNet === 42 || numericNet == ATN_CODE
 
   var isMsg = ('msgParams' in transaction)
   var isTx = ('txParams' in transaction)
@@ -79,7 +80,12 @@ TransactionListItem.prototype.render = function () {
         }
         event.stopPropagation()
         if (!transaction.hash || !isLinkable) return
-        var url = explorerLink(transaction.hash, parseInt(network))
+        var url = ''
+        if(numericNet === ATN_CODE) {
+          url = `${ATN_EXPLORER_API_URL}/${transaction.hash}`
+        } else {
+          url = explorerLink(transaction.hash, parseInt(network))
+        }
         global.platform.openWindow({ url })
       },
       style: {
