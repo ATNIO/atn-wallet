@@ -117,7 +117,7 @@ Network.prototype.render = function() {
                       h('.menu-icon.golden-square'),
                       h('.network-name', {
                           style: {
-                            color: '#e7a218',
+                            color: '#33A0F4',
                           }
                         },
                         'ATN Test Network'),

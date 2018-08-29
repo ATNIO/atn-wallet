@@ -211,7 +211,7 @@ App.prototype.renderAppBar = function() {
                         barHeight: 2,
                         padding: 0,
                         isOpen: state.isMainMenuOpen,
-                        color: 'rgb(247,146,30)',
+                        color: 'rgb(51,160,244)',
                         onClick: () => {
                             this.setState({
                                 isMainMenuOpen: !state.isMainMenuOpen,
@@ -642,7 +642,7 @@ App.prototype.renderCommonRpc = function(rpcList, provider) {
     const rpcTarget = provider.rpcTarget
 
     return rpcList.map((rpc) => {
-        if ((rpc === 'http://localhost:8545') || (rpc === rpcTarget)) {
+        if ((rpc === 'http://localhost:8545') || (rpc === rpcTarget)||(rpc===ATN_TESTNET_URL)) {
             return null
         } else {
             return h(

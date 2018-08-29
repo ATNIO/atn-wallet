@@ -48,6 +48,7 @@ InitializeMenuScreen.prototype.renderMenu = function (state) {
         animationEventEmitter: this.animationEventEmitter,
       }),
 
+      /*
       h('h1', {
         style: {
           fontSize: '1.3em',
@@ -56,6 +57,7 @@ InitializeMenuScreen.prototype.renderMenu = function (state) {
           marginBottom: 10,
         },
       }, 'MetaMask'),
+      */
 
 
       h('div', [
@@ -68,13 +70,13 @@ InitializeMenuScreen.prototype.renderMenu = function (state) {
         }, 'Encrypt your new DEN'),
 
         h(Tooltip, {
-          title: 'Your DEN is your password-encrypted storage within MetaMask.',
+          title: 'Your DEN is your password-encrypted storage within ATN wallet.',
         }, [
           h('i.fa.fa-question-circle.pointer', {
             style: {
               fontSize: '18px',
               position: 'relative',
-              color: 'rgb(247, 134, 28)',
+              color: 'rgb(51,160,244)',
               top: '2px',
               marginLeft: '4px',
             },
@@ -122,7 +124,7 @@ InitializeMenuScreen.prototype.renderMenu = function (state) {
           onClick: this.showRestoreVault.bind(this),
           style: {
             fontSize: '0.8em',
-            color: 'rgb(247, 134, 28)',
+            color: 'rgb(51,160,244)',
             textDecoration: 'underline',
           },
         }, 'Import Existing DEN'),
