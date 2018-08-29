@@ -18,7 +18,7 @@ const ATN_DISPLAY_NAME = 'ATN Network'
 
 const ATN_TESTNET_URL = 'http://119.3.63.215:4545'
 const ATN_FAUCET_URL = 'http://119.3.63.215:4000/#faucet'
-const ATN_EXPLORER_API_URL = 'http://119.3.57.66:4065/api/search'
+const ATN_EXPLORER_API_URL = 'http://119.3.57.66:4065/transactions'
 
 module.exports = {
   ROPSTEN,
