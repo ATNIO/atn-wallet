@@ -31,10 +31,6 @@ class JsonImportSubview extends Component {
       }, [
 
         h('p', 'Used by a variety of different clients'),
-        h('a.warning', {
-          href: HELP_LINK,
-          target: '_blank',
-        }, 'File import not working? Click here!'),
 
         h(FileInput, {
           readAs: 'text',

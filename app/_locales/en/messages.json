@@ -199,7 +199,7 @@
         "message": "The default network for Ether transactions is Main Net."
     },
     "denExplainer": {
-        "message": "Your DEN is your password-encrypted storage within ATNwallet."
+        "message": "Your DEN is your password-encrypted storage within ATN wallet."
     },
     "deposit": {
         "message": "Deposit"
@@ -907,7 +907,7 @@
         "description": "Followed by a link (here) to view token balances"
     },
     "twelveWords": {
-        "message": "These 12 words are the only way to restore your ATNwallet accounts.\nSave them somewhere safe and secret."
+        "message": "These 12 words are the only way to restore your ATN wallet accounts.\nSave them somewhere safe and secret."
     },
     "typePassword": {
         "message": "Type Your Password"

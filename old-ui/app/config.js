@@ -104,6 +104,7 @@ ConfigScreen.prototype.render = function() {
                     currentConversionInformation(metamaskState, state),
 
                     h('hr.horizontal-line'),
+                  /*
 
                     h('div', {
                         style: {
@@ -134,7 +135,7 @@ ConfigScreen.prototype.render = function() {
                     ]),
 
                     h('hr.horizontal-line'),
-
+                    */
                     h('div', {
                         style: {
                             marginTop: '20px',

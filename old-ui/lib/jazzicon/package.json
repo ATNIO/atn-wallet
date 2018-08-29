@@ -1,0 +1,60 @@
+{
+  "_args": [
+    [
+      "jazzicon@1.5.0",
+      "/Users/atmatrix/WebstormProjects/atn-wallet"
+    ]
+  ],
+  "_from": "jazzicon@1.5.0",
+  "_id": "jazzicon@1.5.0",
+  "_inBundle": false,
+  "_integrity": "sha1-1/NrUWAj2znubqwRf0BU6Te2Xpk=",
+  "_location": "/jazzicon",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "jazzicon@1.5.0",
+    "name": "jazzicon",
+    "escapedName": "jazzicon",
+    "rawSpec": "1.5.0",
+    "saveSpec": null,
+    "fetchSpec": "1.5.0"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/jazzicon/-/jazzicon-1.5.0.tgz",
+  "_spec": "1.5.0",
+  "_where": "/Users/atmatrix/WebstormProjects/atn-wallet",
+  "author": {
+    "name": "Dan Finlay"
+  },
+  "bugs": {
+    "url": "https://github.com/flyswatter/jazzicon/issues"
+  },
+  "dependencies": {
+    "color": "^0.11.1",
+    "mersenne-twister": "^1.0.1",
+    "raphael": "^2.2.0"
+  },
+  "description": "Say goodbye to boring blocky identicons that look like they came out of the 70s, and replace them with jazzy, colorful collages that more likely came out of the 80's.",
+  "devDependencies": {},
+  "homepage": "https://github.com/flyswatter/jazzicon#readme",
+  "keywords": [
+    "identicon",
+    "jazz"
+  ],
+  "license": "ISC",
+  "main": "index.js",
+  "name": "jazzicon",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flyswatter/jazzicon.git"
+  },
+  "scripts": {
+    "sample": "beefy sample.js --live --open",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.5.0"
+}
