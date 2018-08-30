@@ -598,7 +598,6 @@ App.prototype.renderCustomOption = function(provider) {
 
     switch (rpcTarget) {
 
-        case 'http://localhost:8545':
         case ATN_TESTNET_URL:
             return null
         default:
@@ -642,7 +641,7 @@ App.prototype.renderCommonRpc = function(rpcList, provider) {
     const rpcTarget = provider.rpcTarget
 
     return rpcList.map((rpc) => {
-        if ((rpc === 'http://localhost:8545') || (rpc === rpcTarget) || (rpc === ATN_TESTNET_URL)) {
+        if ((rpc === rpcTarget) || (rpc === ATN_TESTNET_URL)) {
             return null
         } else {
             return h(
