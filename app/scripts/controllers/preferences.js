@@ -300,9 +300,10 @@ class PreferencesController {
     if (index !== -1) {
       rpcList.splice(index, 1)
     }
-    if (_url !== 'http://localhost:8545') {
-      rpcList.push(_url)
-    }
+    // if (_url !== 'http://localhost:8545') {
+    //   rpcList.push(_url)
+    // }
+    rpcList.push(_url)
     if (rpcList.length > 20) {
       rpcList.shift()
     }
