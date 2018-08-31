@@ -4,6 +4,7 @@ const toChecksumAddress = require('ethereumjs-util').toChecksumAddress
 const contractMap = require('eth-contract-metadata')
 const Avatars = require('@dicebear/avatars').default;
 const SpriteCollection = require('@dicebear/avatars-identicon-sprites').default;
+
 module.exports = function (jazzicon) {
   if (!iconFactory) {
     iconFactory = new IconFactory(jazzicon)
@@ -12,7 +13,7 @@ module.exports = function (jazzicon) {
 }
 
 function IconFactory (jazzicon) {
-  this.jazzicon = jazzicon
+  // this.jazzicon = jazzicon
   this.avatars = new Avatars(SpriteCollection);
   this.cache = {}
 }
