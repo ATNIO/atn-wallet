@@ -2,7 +2,8 @@ var iconFactory
 const isValidAddress = require('ethereumjs-util').isValidAddress
 const toChecksumAddress = require('ethereumjs-util').toChecksumAddress
 const contractMap = require('eth-contract-metadata')
-
+const Avatars = require('@dicebear/avatars').default;
+const SpriteCollection = require('@dicebear/avatars-identicon-sprites').default;
 module.exports = function (jazzicon) {
   if (!iconFactory) {
     iconFactory = new IconFactory(jazzicon)
@@ -12,6 +13,7 @@ module.exports = function (jazzicon) {
 
 function IconFactory (jazzicon) {
   this.jazzicon = jazzicon
+  this.avatars = new Avatars(SpriteCollection);
   this.cache = {}
 }
 
@@ -30,14 +32,26 @@ IconFactory.prototype.generateIdenticonSvg = function (address, diameter) {
   // check cache, lazily generate and populate cache
   var identicon = this.cache[cacheId] || (this.cache[cacheId] = this.generateNewIdenticon(address, diameter))
   // create a clean copy so you can modify it
-  var cleanCopy = identicon.cloneNode(true)
-  return cleanCopy
+  // var cleanCopy = identicon.cloneNode(true)
+
+  var container = document.createElement('div')
+  container.style.borderRadius = '50px'
+  container.style.overflow = 'hidden'
+  container.style.padding = '0px'
+  container.style.margin = '0px'
+  container.style.width = '' + diameter + 'px'
+  container.style.height = '' + diameter + 'px'
+  container.style.display = 'inline-block'
+  container.innerHTML = identicon
+  return container
 }
 
 // creates a new identicon
 IconFactory.prototype.generateNewIdenticon = function (address, diameter) {
   var numericRepresentation = jsNumberForAddress(address)
-  var identicon = this.jazzicon(diameter, numericRepresentation)
+
+  var identicon = this.avatars.create(address)
+  // var identicon = this.jazzicon(diameter, address)
   return identicon
 }
 

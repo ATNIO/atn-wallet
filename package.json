@@ -64,6 +64,8 @@
     ]
   },
   "dependencies": {
+    "@dicebear/avatars": "^2.0.4",
+    "@dicebear/avatars-identicon-sprites": "^1.0.3",
     "@material-ui/core": "^1.0.0",
     "abi-decoder": "^1.0.9",
     "asmcrypto.js": "0.22.0",
