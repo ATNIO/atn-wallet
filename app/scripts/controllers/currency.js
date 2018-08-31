@@ -120,7 +120,7 @@ class CurrencyController {
       }
       this.setConversionDate(Number(parsedResponse[0].last_updated))
     } catch (err) {
-      log.warn(`MetaMask - Failed to query currency conversion:`, currentCurrency, err)
+      log.warn(`Failed to query currency conversion:`, currentCurrency, err)
       this.setConversionRate(0)
       this.setConversionDate('N/A')
     }

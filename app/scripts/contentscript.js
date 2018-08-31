@@ -194,6 +194,6 @@ function blacklistedDomainCheck () {
  * Redirects the current page to a phishing information page
  */
 function redirectToPhishingWarning () {
-  console.log('MetaMask - redirecting to phishing warning')
+  console.log('redirecting to phishing warning')
   window.location.href = 'https://metamask.io/phishing.html'
 }

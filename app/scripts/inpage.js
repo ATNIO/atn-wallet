@@ -27,17 +27,16 @@ var inpageProvider = new MetamaskInpageProvider(metamaskStream)
 //
 
 if (typeof window.atn3 !== 'undefined') {
-  throw new Error(`MetaMask detected another web3.
-     MetaMask will not work reliably with another web3 extension.
-     This usually happens if you have two MetaMasks installed,
-     or MetaMask and another web3 extension. Please remove one
-     and try again.`)
+  throw new Error(`detected another atn3.
+     atn wallet will not work reliably with another atn3 extension.
+     This usually happens if you have two atn wallet installed,
+     . Please remove one and try again.`)
 }
 var web3 = new Web3(inpageProvider)
 web3.setProvider = function () {
-  log.debug('MetaMask - overrode web3.setProvider')
+  log.debug('overrode web3.setProvider')
 }
-log.debug('MetaMask - injected web3')
+log.debug('injected web3')
 
 setupDappAutoReload(web3, inpageProvider.publicConfigStore)
 
@@ -82,7 +81,7 @@ function cleanContextForImports () {
   try {
     global.define = undefined
   } catch (_) {
-    console.warn('MetaMask - global.define could not be deleted.')
+    console.warn('global.define could not be deleted.')
   }
 }
 
@@ -93,6 +92,6 @@ function restoreContextAfterImports () {
   try {
     global.define = __define
   } catch (_) {
-    console.warn('MetaMask - global.define could not be overwritten.')
+    console.warn('global.define could not be overwritten.')
   }
 }
