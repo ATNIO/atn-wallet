@@ -1,3 +1,4 @@
+const {ATN_EXPLORER_ACCOUNT_URL} = require('../../app/scripts/controllers/network/enums')
 module.exports = function (address, network) {
   const net = parseInt(network)
   let link
@@ -18,7 +19,7 @@ module.exports = function (address, network) {
       link = `https://kovan.etherscan.io/address/${address}`
       break
     case 17: // kovan test net
-      link = `http://119.3.57.66:4065/accounts/${address}`
+      link = `${ATN_EXPLORER_ACCOUNT_URL}/${address}`
       break
     default:
       link = ''

@@ -616,9 +616,14 @@ App.prototype.renderCustomOption = function(provider) {
 }
 
 App.prototype.getNetworkName = function() {
-    const { provider } = this.props
+    const provider = this.props.provider
     const providerName = provider.type
-
+    var rpcTarget
+    try {
+        rpcTarget = provider.rpcTarget;
+    } catch (e) {
+        rpcTarget = null;
+    }
     let name
 
     if (providerName === 'mainnet') {
@@ -629,6 +634,8 @@ App.prototype.getNetworkName = function() {
         name = 'Kovan Test Network'
     } else if (providerName === 'rinkeby') {
         name = 'Rinkeby Test Network'
+    } else if (rpcTarget === ATN_TESTNET_URL) {
+      name = 'ATN Test Network'
     } else {
         name = 'Unknown Private Network'
     }

@@ -5,6 +5,7 @@ const {
   ROPSTEN_RPC_URL,
   KOVAN_RPC_URL,
   RINKEBY_RPC_URL,
+  ATN_TESTNET_URL,
 } = require('../controllers/network/enums')
 
 /* The config-manager is a convenience object
@@ -165,7 +166,7 @@ ConfigManager.prototype.getCurrentRpcAddress = function () {
       return RINKEBY_RPC_URL
 
     case 'atn':
-      return 'http://119.3.63.215:4545'
+      return ATN_TESTNET_URL
 
     default:
       return provider && provider.rpcTarget ? provider.rpcTarget : RINKEBY_RPC_URL

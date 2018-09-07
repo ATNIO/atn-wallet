@@ -712,6 +712,9 @@
     "connectingToRinkeby": {
         "message": "Connecting to Rinkeby Test Network"
     },
+    "connectingToAtnTest": {
+      "message": "Connecting to ATN Test Network"
+    },
     "connectingToUnknown": {
         "message": "Connecting to Unknown Network"
     },
