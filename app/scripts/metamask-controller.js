@@ -663,9 +663,9 @@ module.exports = class MetamaskController extends EventEmitter {
         case 'signed':
           return cb(null, data.rawSig)
         case 'rejected':
-          return cb(cleanErrorStack(new Error('MetaMask Message Signature: User denied message signature.')))
+          return cb(cleanErrorStack(new Error('Message Signature: User denied message signature.')))
         default:
-          return cb(cleanErrorStack(new Error(`MetaMask Message Signature: Unknown problem: ${JSON.stringify(msgParams)}`)))
+          return cb(cleanErrorStack(new Error(`Message Signature: Unknown problem: ${JSON.stringify(msgParams)}`)))
       }
     })
   }
@@ -723,7 +723,7 @@ module.exports = class MetamaskController extends EventEmitter {
    */
   newUnsignedPersonalMessage (msgParams, cb) {
     if (!msgParams.from) {
-      return cb(cleanErrorStack(new Error('MetaMask Message Signature: from field is required.')))
+      return cb(cleanErrorStack(new Error('Message Signature: from field is required.')))
     }
 
     const msgId = this.personalMessageManager.addUnapprovedMessage(msgParams)
@@ -734,9 +734,9 @@ module.exports = class MetamaskController extends EventEmitter {
         case 'signed':
           return cb(null, data.rawSig)
         case 'rejected':
-          return cb(cleanErrorStack(new Error('MetaMask Message Signature: User denied message signature.')))
+          return cb(cleanErrorStack(new Error('Message Signature: User denied message signature.')))
         default:
-          return cb(cleanErrorStack(new Error(`MetaMask Message Signature: Unknown problem: ${JSON.stringify(msgParams)}`)))
+          return cb(cleanErrorStack(new Error(`Message Signature: Unknown problem: ${JSON.stringify(msgParams)}`)))
       }
     })
   }
@@ -802,9 +802,9 @@ module.exports = class MetamaskController extends EventEmitter {
         case 'signed':
           return cb(null, data.rawSig)
         case 'rejected':
-          return cb(cleanErrorStack(new Error('MetaMask Message Signature: User denied message signature.')))
+          return cb(cleanErrorStack(new Error('Message Signature: User denied message signature.')))
         default:
-          return cb(cleanErrorStack(new Error(`MetaMask Message Signature: Unknown problem: ${JSON.stringify(msgParams)}`)))
+          return cb(cleanErrorStack(new Error(`Message Signature: Unknown problem: ${JSON.stringify(msgParams)}`)))
       }
     })
   }
