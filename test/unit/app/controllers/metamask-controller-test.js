@@ -457,7 +457,7 @@ describe('MetaMaskController', function () {
         'data': data,
       }
       metamaskController.newUnsignedPersonalMessage(msgParams, function (error) {
-        assert.equal(error.message, 'MetaMask Message Signature: from field is required.')
+        assert.equal(error.message, 'Message Signature: from field is required.')
       })
     })
 
