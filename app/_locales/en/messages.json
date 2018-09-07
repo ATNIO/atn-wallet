@@ -33,7 +33,7 @@
         "message": "Amount + Gas"
     },
     "appDescription": {
-        "message": "Ethereum Browser Extension",
+        "message": "ATN Browser Extension",
         "description": "The description of the application"
     },
     "appName": {

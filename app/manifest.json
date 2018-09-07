@@ -1,7 +1,7 @@
 {
   "name": "__MSG_appName__",
   "short_name": "__MSG_appName__",
-  "version": "1.1.0",
+  "version": "1.1",
   "manifest_version": 2,
   "author": "https://metamask.io",
   "description": "__MSG_appDescription__",
@@ -37,7 +37,7 @@
       "19": "images/icon-19.png",
       "38": "images/icon-38.png"
     },
-    "default_title": "MetaMask",
+    "default_title": "Atn Wallet",
     "default_popup": "popup.html"
   },
   "content_scripts": [
