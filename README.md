@@ -11,7 +11,8 @@ Download atn wallet chrome extension from [release-page](https://github.com/ATNI
 Install steps:
 - Open your chrome explorer and go to `chrome://extensions/` page.
 - Ensure that the `Developer mode` checkbox in the top right-hand corner is checked.
-- Drag downloaded atn wallet extension `atn_wallet-chrome-vx.x.x.crx` to finish installation.
+- Drag downloaded atn wallet extension `atn_wallet-chrome-vx.x.x.crx` to finish installation:
+![Drag & Install](./docs/install.png)
 
 Enjoy your atn wallet now.
 
@@ -28,6 +29,6 @@ npm run dist
 
 ## Other Docs
 
-- [TODO]
+- To be continue
 
 
