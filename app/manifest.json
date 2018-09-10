@@ -3,15 +3,15 @@
   "short_name": "__MSG_appName__",
   "version": "0.1.2",
   "manifest_version": 2,
-  "author": "https://metamask.io",
+  "author": "https://atn.io",
   "description": "__MSG_appDescription__",
   "commands": {
     "_execute_browser_action": {
       "suggested_key": {
-        "windows": "Alt+Shift+M",
-        "mac": "Alt+Shift+M",
-        "chromeos": "Alt+Shift+M",
-        "linux": "Alt+Shift+M"
+        "windows": "Alt+Shift+U",
+        "mac": "Alt+Shift+U",
+        "chromeos": "Alt+Shift+U",
+        "linux": "Alt+Shift+U"
       }
     }
   },
@@ -21,7 +21,7 @@
   },
   "applications": {
     "gecko": {
-      "id": "webextension@metamask.io"
+        "id": "contact@atn.io"
     }
   },
   "default_locale": "en",
@@ -66,7 +66,7 @@
   ],
   "externally_connectable": {
     "matches": [
-      "https://metamask.io/*"
+      "https://atn.io/*"
     ],
     "ids": [
       "*"
