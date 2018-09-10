@@ -1,6 +1,6 @@
 # atn-wallet Browser Extension
 
-atn-wallet forks [metamask](metamask.md) to reuse the most features
+atn-wallet forks [metamask](https://github.com/MetaMask/metamask-extension) to reuse the most features
 
 Node version recommand: 8.11.3
 
