@@ -378,6 +378,14 @@ gulp.task('zip:edge', zipTask('edge'))
 gulp.task('zip:opera', zipTask('opera'))
 gulp.task('zip', gulp.parallel('zip:chrome', 'zip:firefox', 'zip:edge', 'zip:opera'))
 
+// copy tasks for distribution
+gulp.task('buildCopy:chrome', buildCopyTask('chrome'))
+gulp.task('buildCopy', gulp.parallel('buildCopy:chrome'))
+// gulp.task('buildCopy:firefox', buildCopyTask('firefox'))
+// gulp.task('buildCopy:edge', buildCopyTask('edge'))
+// gulp.task('buildCopy:opera', buildCopyTask('opera'))
+// gulp.task('buildCopy', gulp.parallel('buildCopy:chrome', 'buildCopy:firefox', 'buildCopy:edge', 'buildCopy:opera'))
+
 // high level tasks
 
 gulp.task('dev',
@@ -458,15 +466,30 @@ gulp.task('dist',
   )
 )
 
+gulp.task('lightdist',
+  gulp.series(
+    'build',
+    'buildCopy'
+  )
+)
+
 // task generators
 
 function zipTask(target) {
   return () => {
     return gulp.src(`dist/${target}/**`)
-    .pipe(zip(`metamask-${target}-${manifest.version}.zip`))
+    .pipe(zip(`atn_wallet-${target}-${manifest.version}.zip`))
     .pipe(gulp.dest('builds'))
   }
 }
+
+function buildCopyTask(target) {
+  return () => {
+    return gulp.src(`dist/${target}/**`)
+    .pipe(gulp.dest(`builds/atn_wallet-${target}-${manifest.version}`))
+  }
+}
+
 
 function generateBundler(opts, performBundle) {
   const browserifyOpts = assign({}, watchify.args, {

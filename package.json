@@ -7,6 +7,7 @@
     "start": "gulp dev:extension",
     "mascara": "gulp dev:mascara & node ./mascara/example/server",
     "dist": "gulp dist",
+    "lightdist": "gulp lightdist",
     "doc": "jsdoc -c development/tools/.jsdoc.json",
     "test": "npm run test:unit && npm run test:integration && npm run lint",
     "watch:test:unit": "nodemon --exec \"npm run test:unit\" ./test ./app ./ui",
