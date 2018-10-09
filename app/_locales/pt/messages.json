@@ -34,7 +34,7 @@
         "description": "A descrição da aplicação"
     },
     "appName": {
-        "message": "ATNwallet",
+        "message": "ATN wallet",
         "description": "Nome da aplicação"
     },
     "attemptingConnect": {

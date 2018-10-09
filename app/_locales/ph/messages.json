@@ -28,7 +28,7 @@
         "description": "Ang deskripsyon ng application"
     },
     "appName": {
-        "message": "ATNwallet",
+        "message": "ATN wallet",
         "description": "Ang pangalan ng application"
     },
     "attemptingConnect": {

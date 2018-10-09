@@ -34,7 +34,7 @@
         "description": "Die Beschreibung der Erweiterung"
     },
     "appName": {
-        "message": "ATNwallet",
+        "message": "ATN wallet",
         "description": "Der Name der Erweiterung"
     },
     "approved": {

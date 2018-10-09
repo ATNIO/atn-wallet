@@ -28,8 +28,8 @@
     "description": "어플리케이션 내용"
   },
   "appName": {
-    "message": "메타마스크",
-    "description": "어플리케이션 이름"
+    "message": "ATN wallet",
+    "description": ""
   },
   "attemptingConnect": {
     "message": "블록체인에 접속 시도 중입니다."
