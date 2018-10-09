@@ -16,14 +16,10 @@ const KOVAN_DISPLAY_NAME = 'Kovan'
 const MAINNET_DISPLAY_NAME = 'Main Ethereum Network'
 const ATN_DISPLAY_NAME = 'ATN Network'
 
-// const ATN_TESTNET_URL = 'http://rpc.atn.io'
-// const ATN_FAUCET_URL = 'http://faucet.atn.io'
-// const ATN_EXPLORER_API_URL = 'http://explorer.atn.io/transactions'
-// const ATN_EXPLORER_ACCOUNT_URL = 'http://explorer.atn.io/accounts'
-const ATN_TESTNET_URL = 'https://rpc.atn.io'
-const ATN_FAUCET_URL = 'https://faucet.atn.io'
-const ATN_EXPLORER_API_URL = 'https://explorer.atn.io/transactions'
-const ATN_EXPLORER_ACCOUNT_URL = 'https://explorer.atn.io/accounts'
+const ATN_TESTNET_URL = 'https://rpc-test.atnio.net'
+const ATN_FAUCET_URL = 'https://faucet-test.atnio.net'
+const ATN_EXPLORER_API_URL = 'https://explorer-test.atnio.net/transactions'
+const ATN_EXPLORER_ACCOUNT_URL = 'https://explorer-test.atnio.net/accounts'
 
 module.exports = {
   ROPSTEN,
