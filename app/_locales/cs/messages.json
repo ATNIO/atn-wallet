@@ -30,11 +30,11 @@
     "message": "Částka + palivo"
   },
   "appDescription": {
-    "message": "ATN rozšíření prohlížeče",
+    "message": "ATMATRIX rozšíření prohlížeče",
     "description": "The description of the application"
   },
   "appName": {
-    "message": "ATN wallet",
+    "message": "Atmatrix wallet",
     "description": "The name of the application"
   },
   "approved": {
@@ -75,7 +75,7 @@
     "message": "Pújčit si přes Dharma (Beta)"
   },
   "builtInCalifornia": {
-    "message": "ATNwallet je navržen a vytvořen v Kalifornii."
+    "message": "Atmatrix wallet je navržen a vytvořen v Kalifornii."
   },
   "buy": {
     "message": "Koupit"
@@ -218,7 +218,7 @@
     "message": "Vklad přes ShapeShift"
   },
   "depositShapeShiftExplainer": {
-    "message": "Pokud vlastníte jiné kryptoměny, můžete je směnit Ether a vložit ho přímo do peněženky ATNwallet. Bez založení účtu."
+    "message": "Pokud vlastníte jiné kryptoměny, můžete je směnit Ether a vložit ho přímo do peněženky Atmatrix wallet. Bez založení účtu."
   },
   "details": {
     "message": "Podrobnosti"
@@ -474,7 +474,7 @@
     "message": "Zpráva"
   },
   "metamaskDescription": {
-    "message": "ATNwallet je bezpečný osobní trezor pro Ethereum."
+    "message": "Atmatrix wallet je bezpečný osobní trezor pro Ethereum."
   },
   "min": {
     "message": "Minimum"
@@ -843,7 +843,7 @@
     "description": "Followed by a link (here) to view token balances"
   },
   "twelveWords": {
-    "message": "Těchto 12 slov je jedinou možností, jak obnovit ATNwallet účet. \nUložte je na bezpečné a neveřejné místo."
+    "message": "Těchto 12 slov je jedinou možností, jak obnovit Atmatrix wallet účet. \nUložte je na bezpečné a neveřejné místo."
   },
   "typePassword": {
     "message": "Zadejte své heslo"
@@ -898,7 +898,7 @@
     "message": "Varování"
   },
   "welcomeBeta": {
-    "message": "Vítejte v ATNwallet Beta"
+    "message": "Vítejte v Atmatrix wallet Beta"
   },
   "whatsThis": {
     "message": "Co to je?"

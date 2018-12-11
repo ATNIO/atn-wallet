@@ -165,7 +165,7 @@ ConfigManager.prototype.getCurrentRpcAddress = function () {
     case 'rinkeby':
       return RINKEBY_RPC_URL
 
-    case 'atn':
+    case 'atmatrix':
       return ATN_TESTNET_URL
 
     default:

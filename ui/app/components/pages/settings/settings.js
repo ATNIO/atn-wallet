@@ -142,9 +142,9 @@ class Settings extends Component {
         color = '#ebb33f'
         break
 
-      case 'atn':
+      case 'atmatrix':
         title = this.context.t('currentNetwork')
-        value = this.context.t('atn')
+        value = this.context.t('atmatrix')
         color = '#ebb33f'
         break
 

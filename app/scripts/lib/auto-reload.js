@@ -7,7 +7,7 @@ function setupDappAutoReload (web3, observable) {
   let lastTimeUsed
   let lastSeenNetwork
 
-  global.atn3 = new Proxy(web3, {
+  global.atmatrix3 = new Proxy(web3, {
     get: (_web3, key) => {
       // show warning once on web3 access
       if (!hasBeenWarned && key !== 'currentProvider') {

@@ -78,9 +78,9 @@ BalanceComponent.prototype.renderBalance = function () {
   return h('div.flex-column.balance-display', {}, [
     h('div.token-amount', {
       style: {},
-    }, this.getTokenBalance(formattedBalance, shorten)),
+    }, this.getTokenBalance(formattedBalance, shorten)), null
 
-    showFiat ? this.renderFiatValue(formattedBalance) : null,
+    // showFiat ? this.renderFiatValue(formattedBalance) : null,
   ])
 }
 

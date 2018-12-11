@@ -112,14 +112,14 @@ function formatBalance(balance, decimalsToKeep, needsParse = true) {
             if (afterDecimal !== '0') {
                 var sigFigs = afterDecimal.match(/^0*(.{2})/) // default: grabs 2 most significant digits
                 if (sigFigs) { afterDecimal = sigFigs[0] }
-                formatted = '0.' + afterDecimal + ' ATN'
+                formatted = '0.' + afterDecimal + ' ATX'
             }
         } else {
-            formatted = beforeDecimal + '.' + afterDecimal.slice(0, 3) + ' ATN'
+            formatted = beforeDecimal + '.' + afterDecimal.slice(0, 3) + ' ATX'
         }
     } else {
         afterDecimal += Array(decimalsToKeep).join('0')
-        formatted = beforeDecimal + '.' + afterDecimal.slice(0, decimalsToKeep) + ' ATN'
+        formatted = beforeDecimal + '.' + afterDecimal.slice(0, decimalsToKeep) + ' ATX'
     }
     return formatted
 }

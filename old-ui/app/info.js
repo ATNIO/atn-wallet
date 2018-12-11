@@ -46,7 +46,7 @@ InfoScreen.prototype.render = function () {
           // current version number
 
           h('.info.info-gray', [
-            h('div', 'atn wallet'),
+            h('div', 'Atmatrix wallet'),
             h('div', {
               style: {
                 marginBottom: '10px',
@@ -103,7 +103,7 @@ InfoScreen.prototype.render = function () {
             [
               h('div', [
                 h('a', {
-                  href: 'https://www.atn.io/',
+                  href: 'https://www.atmatrix.org/',
                   target: '_blank',
                 }, [
                   h('img.icon-size', {
@@ -119,20 +119,11 @@ InfoScreen.prototype.render = function () {
                 ]),
               ]),
 
-              h('div', [
-                h('.fa.fa-twitter', [
-                  h('a.info', {
-                    href: 'https://twitter.com/atn_io',
-                    target: '_blank',
-                  }, 'Follow us on Twitter'),
-                ]),
-              ]),
-
               h('div.fa.fa-envelope', [
                 h('a.info', {
                   target: '_blank',
                   style: { width: '85vw' },
-                  href: 'mailto:contact@atn.io?subject=Feedback',
+                  href: 'mailto:contact@atmatrix.org?subject=Feedback',
                 }, 'Email us!'),
               ]),
             ]),

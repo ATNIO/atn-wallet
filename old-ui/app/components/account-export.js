@@ -117,7 +117,7 @@ ExportAccountView.prototype.render = function () {
         style: {
           marginLeft: '10px',
         },
-        onClick: () => exportAsFile(`ATN ${nickname} Private Key`, plainKey),
+        onClick: () => exportAsFile(`Atmatrix ${nickname} Private Key`, plainKey),
       }, 'Save as File'),
     ])
   }

@@ -298,7 +298,7 @@ App.prototype.renderNetworkDropdown = function() {
                 },
             }, [
                 h('.menu-icon.golden-square'),
-                'ATN Test Network',
+                'Atmatrix Network',
                 // providerType === 'atn' ? h('.check', '✓') : null,
                 activeNetwork === ATN_TESTNET_URL && providerType === 'rpc' ? h('.check', '✓') : null,
             ]
@@ -635,7 +635,7 @@ App.prototype.getNetworkName = function() {
     } else if (providerName === 'rinkeby') {
         name = 'Rinkeby Test Network'
     } else if (rpcTarget === ATN_TESTNET_URL) {
-      name = 'ATN Test Network'
+      name = 'Atmatrix Network'
     } else {
         name = 'Unknown Private Network'
     }

@@ -275,7 +275,7 @@ SendTransactionScreen.prototype.onSubmit = function() {
     }
 
     if (input < 0) {
-        message = 'Can not send negative amounts of ATN.'
+        message = 'Can not send negative amounts of ATX.'
         return this.props.dispatch(actions.displayWarning(message))
     }
 

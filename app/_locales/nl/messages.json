@@ -34,7 +34,7 @@
         "description": "De beschrijving van de applicatie"
     },
     "appName": {
-        "message": "ATN wallet",
+        "message": "Atmatrix wallet",
         "description": "De naam van de applicatie"
     },
     "attemptingConnect": {
@@ -72,7 +72,7 @@
         "message": "Lenen met Dharma (Beta)"
     },
     "builtInCalifornia": {
-        "message": "ATNwallet is ontworpen en gebouwd in Californië."
+        "message": "Atmatrix wallet is ontworpen en gebouwd in Californië."
     },
     "buy": {
         "message": "Kopen"
@@ -178,7 +178,7 @@
         "message": "Het standaardnetwerk voor Ether-transacties is Main Net."
     },
     "denExplainer": {
-        "message": "Uw DEN is uw wachtwoord-gecodeerde opslag binnen ATNwallet."
+        "message": "Uw DEN is uw wachtwoord-gecodeerde opslag binnen Atmatrix wallet."
     },
     "deposit": {
         "message": "Storting"
@@ -206,7 +206,7 @@
         "message": "Stort met ShapeShift"
     },
     "depositShapeShiftExplainer": {
-        "message": "Als u andere cryptocurrencies bezit, kunt u Ether direct in uw ATNwallet-portemonnee ruilen en storten. Geen account nodig."
+        "message": "Als u andere cryptocurrencies bezit, kunt u Ether direct in uw Atmatrix wallet-portemonnee ruilen en storten. Geen account nodig."
     },
     "details": {
         "message": "Details"
@@ -351,7 +351,7 @@
         "message": "Account importeren"
     },
     "importAccountMsg": {
-        "message": " Geïmporteerde accounts worden niet gekoppeld aan de seedphrase van uw oorspronkelijk gemaakte ATNwallet-account. Meer informatie over geïmporteerde accounts"
+        "message": " Geïmporteerde accounts worden niet gekoppeld aan de seedphrase van uw oorspronkelijk gemaakte Atmatrix wallet-account. Meer informatie over geïmporteerde accounts"
     },
     "importAnAccount": {
         "message": "Importeer een account"
@@ -441,7 +441,7 @@
         "message": "Bericht"
     },
     "metamaskDescription": {
-        "message": "ATNwallet is een veilige identiteitskluis voor Ethereum."
+        "message": "Atmatrix wallet is een veilige identiteitskluis voor Ethereum."
     },
     "min": {
         "message": "Minimum"
@@ -453,7 +453,7 @@
         "message": "Moet ten minste één token selecteren."
     },
     "needEtherInWallet": {
-        "message": "Om te communiceren met gedecentraliseerde applicaties met ATNwallet, heb je Ether nodig in je portemonnee."
+        "message": "Om te communiceren met gedecentraliseerde applicaties met Atmatrix wallet, heb je Ether nodig in je portemonnee."
     },
     "needImportFile": {
         "message": "U moet een bestand selecteren om te importeren.",
@@ -731,7 +731,7 @@
         "message": "Token Symbol"
     },
     "tokenWarning1": {
-        "message": "Houd de tokens bij die je hebt gekocht met je ATNwallet-account. Als je tokens met een ander account hebt gekocht, worden die tokens hier niet weergegeven."
+        "message": "Houd de tokens bij die je hebt gekocht met je Atmatrix wallet-account. Als je tokens met een ander account hebt gekocht, worden die tokens hier niet weergegeven."
     },
     "total": {
         "message": "Totaal"
@@ -753,7 +753,7 @@
         "description": "Gevolgd door een link (hier) om tegensaldi te bekijken"
     },
     "twelveWords": {
-        "message": "Deze 12 woorden zijn de enige manier om uw ATNwallet-accounts te herstellen.\nBewaar ze ergens veilig en geheim."
+        "message": "Deze 12 woorden zijn de enige manier om uw Atmatrix wallet-accounts te herstellen.\nBewaar ze ergens veilig en geheim."
     },
     "typePassword": {
         "message": "Typ uw wachtwoord"
@@ -805,7 +805,7 @@
         "message": "Waarschuwing"
     },
     "welcomeBeta": {
-        "message": "Welkom bij ATNwallet Beta"
+        "message": "Welkom bij Atmatrix wallet Beta"
     },
     "whatsThis": {
         "message": "Wat is dit?"

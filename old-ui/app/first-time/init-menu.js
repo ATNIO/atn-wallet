@@ -70,7 +70,7 @@ InitializeMenuScreen.prototype.renderMenu = function (state) {
         }, 'Encrypt your new DEN'),
 
         h(Tooltip, {
-          title: 'Your DEN is your password-encrypted storage within ATN wallet.',
+          title: 'Your DEN is your password-encrypted storage within Atmatrix wallet.',
         }, [
           h('i.fa.fa-question-circle.pointer', {
             style: {

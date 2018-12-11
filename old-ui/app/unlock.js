@@ -44,7 +44,7 @@ UnlockScreen.prototype.render = function() {
                         textTransform: 'uppercase',
                         color: '#7F8082',
                     },
-                }, 'ATNWALLET'),
+                }, 'ATMATRIX WALLET'),
 
                 h('input.large-input', {
                     type: 'password',

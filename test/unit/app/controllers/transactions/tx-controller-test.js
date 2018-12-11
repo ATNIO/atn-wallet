@@ -152,7 +152,7 @@ describe('Transaction Controller', function () {
 
       txController.newUnapprovedTransaction(txParams)
       .catch((err) => {
-        if (err.message === 'ATN Tx Signature: User denied transaction signature.') done()
+        if (err.message === 'Atmatrix Tx Signature: User denied transaction signature.') done()
         else done(err)
       })
     })

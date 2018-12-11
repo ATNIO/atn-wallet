@@ -25,7 +25,7 @@
         "id": "contact@atmatrix.org"
     }
   },
-  "default_locale": "en",
+  "default_locale": "zh_CN",
   "background": {
     "scripts": [
       "chromereload.js",

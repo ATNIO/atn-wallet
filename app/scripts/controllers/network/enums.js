@@ -3,7 +3,7 @@ const RINKEBY = 'rinkeby'
 const KOVAN = 'kovan'
 const MAINNET = 'mainnet'
 const LOCALHOST = 'localhost'
-const ATN = 'atn'
+const ATN = 'atmatrix'
 
 const ROPSTEN_CODE = 3
 const RINKEYBY_CODE = 4
@@ -14,12 +14,12 @@ const ROPSTEN_DISPLAY_NAME = 'Ropsten'
 const RINKEBY_DISPLAY_NAME = 'Rinkeby'
 const KOVAN_DISPLAY_NAME = 'Kovan'
 const MAINNET_DISPLAY_NAME = 'Main Ethereum Network'
-const ATN_DISPLAY_NAME = 'ATN Network'
+const ATN_DISPLAY_NAME = 'ATMATRIX Network'
 
 const ATN_TESTNET_URL = 'https://rpc-test.atnio.net'
 const ATN_FAUCET_URL = 'https://faucet-test.atnio.net'
-const ATN_EXPLORER_API_URL = 'https://explorer-test.atnio.net/transactions'
-const ATN_EXPLORER_ACCOUNT_URL = 'https://explorer-test.atnio.net/accounts'
+const ATN_EXPLORER_API_URL = 'https://explorer.atmatrix.org/transactions'
+const ATN_EXPLORER_ACCOUNT_URL = 'https://explorer.atmatrix.org/accounts'
 
 module.exports = {
   ROPSTEN,

@@ -102,9 +102,9 @@ ConfigScreen.prototype.render = function() {
 
                     h('hr.horizontal-line'),
 
-                    currentConversionInformation(metamaskState, state),
+                    // currentConversionInformation(metamaskState, state),
 
-                    h('hr.horizontal-line'),
+                    // h('hr.horizontal-line'),
                   /*
 
                     h('div', {
@@ -246,14 +246,14 @@ function currentProviderDisplay(metamaskState) {
             title = 'Current Network'
             value = 'rinkeby Test Network'
             break
-        case 'atn':
+        case 'atmatrix':
           title = 'Current Network'
-          value = 'ATN Test Network'
+          value = 'Atmatrix Network'
           break
         default:
             if (rpcTarget === ATN_TESTNET_URL) {
               title = 'Current Network'
-              value = 'ATN Test Network'
+              value = 'Atmatrix Network'
             } else {
               title = 'Current RPC'
               value = metamaskState.provider.rpcTarget

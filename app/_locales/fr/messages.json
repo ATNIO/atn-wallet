@@ -24,11 +24,11 @@
         "message": "Montant + Gaz"
     },
     "appDescription": {
-        "message": "Extension ATN pour navigateur",
+        "message": "Extension Atmatrix pour navigateur",
         "description": "La description de l'application"
     },
     "appName": {
-        "message": "ATN wallet",
+        "message": "Atmatrix wallet",
         "description": "Le nom de l'application"
     },
     "attemptingConnect": {
@@ -139,7 +139,7 @@
         "message": "Le réseau par défaut pour les transactions Ether est Main Net."
     },
     "denExplainer": {
-        "message": "Votre DEN est votre stockage crypté par mot de passe dans ATNwallet."
+        "message": "Votre DEN est votre stockage crypté par mot de passe dans Atmatrix wallet."
     },
     "deposit": {
         "message": "Dépôt"
@@ -167,7 +167,7 @@
         "message": "Déposez avec ShapeShift"
     },
     "depositShapeShiftExplainer": {
-        "message": "Si vous possédez d'autres crypto-monnaies, vous pouvez échanger et déposer de l'Ether directement dans votre portefeuille ATNwallet. Aucun compte n'est requis."
+        "message": "Si vous possédez d'autres crypto-monnaies, vous pouvez échanger et déposer de l'Ether directement dans votre portefeuille Atmatrix wallet. Aucun compte n'est requis."
     },
     "details": {
         "message": "Détails"
@@ -354,7 +354,7 @@
         "message": "Mes comptes"
     },
     "needEtherInWallet": {
-        "message": "Pour interagir avec des applications décentralisées à l'aide de ATNwallet, vous aurez besoin d'Ether dans votre portefeuille."
+        "message": "Pour interagir avec des applications décentralisées à l'aide de Atmatrix wallet, vous aurez besoin d'Ether dans votre portefeuille."
     },
     "needImportFile": {
         "message": "Vous devez sélectionner un fichier à importer.",

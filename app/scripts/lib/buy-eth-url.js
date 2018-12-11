@@ -32,6 +32,7 @@ function getBuyEthUrl ({ network, amount, address }) {
       url = 'https://github.com/kovan-testnet/faucet'
       break
     case '17':
+      // TODO: faucet_url
       url = ATN_FAUCET_URL
       break
   }

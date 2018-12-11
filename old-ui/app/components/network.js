@@ -59,8 +59,8 @@ Network.prototype.render = function() {
         hoverText = 'rinkeby Test Network'
         iconName = 'rinkeby-test-network'
     } else if (networkNumber === '17' && rpcTarget === ATN_TESTNET_URL) {
-        hoverText = 'ATN Test Network'
-        iconName = 'atn-test-network'
+        hoverText = 'Atmatrix Network'
+        iconName = 'atmatrix-network'
     } else {
         hoverText = 'Unknown Private Network'
         iconName = 'unknown-private-network'
@@ -113,10 +113,10 @@ Network.prototype.render = function() {
                                         color: '#e7a218',
                                     }
                                 },
-                                'ATN Test Net'),
+                                'Atmatrix Network'),
                             props.onClick && h('i.fa.fa-caret-down.fa-lg'),
                         ])
-                  case 'atn-test-network':
+                  case 'atmatrix-network':
                     return h('.network-indicator', [
                       h('.menu-icon.golden-square'),
                       h('.network-name', {
@@ -124,7 +124,7 @@ Network.prototype.render = function() {
                             color: '#33A0F4',
                           }
                         },
-                        'ATN Test Network'),
+                        'Atmatrix Network'),
                       props.onClick && h('i.fa.fa-caret-down.fa-lg'),
                     ])
                     default:

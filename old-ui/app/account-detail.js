@@ -193,11 +193,11 @@ AccountDetailScreen.prototype.render = function () {
           }),
 
           h('.flex-grow'),
-
-          h('button', {
-            onClick: () => props.dispatch(actions.buyEthView(selected)),
-            style: { marginRight: '10px' },
-          }, 'FAUCET'),
+          //
+          // h('button', {
+          //   onClick: () => props.dispatch(actions.buyEthView(selected)),
+          //   style: { marginRight: '10px' },
+          // }, 'FAUCET'),
 
           h('button', {
             onClick: () => props.dispatch(actions.showSendPage()),
@@ -244,7 +244,7 @@ AccountDetailScreen.prototype.tabSections = function () {
     h(TabBar, {
       tabs: [
         { content: 'Sent', key: 'history' },
-        { content: 'Tokens', key: 'tokens' },
+        // { content: 'Tokens', key: 'tokens' },
       ],
       defaultTab: currentAccountTab || 'history',
       tabSelected: (key) => {

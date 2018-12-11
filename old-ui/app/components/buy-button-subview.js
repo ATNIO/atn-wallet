@@ -77,7 +77,7 @@ BuyButtonSubview.prototype.headerSubview = function() {
                         paddingTop: '4px',
                         paddingBottom: '4px',
                     },
-                }, 'ATN FAUCET'),
+                }, 'Atmatrix FAUCET'),
             ]),
 
             // loading indication

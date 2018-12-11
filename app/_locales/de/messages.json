@@ -30,11 +30,11 @@
         "message": "Betrag + Gas"
     },
     "appDescription": {
-        "message": "ATN Browsererweiterung",
+        "message": "Atmatrix Browsererweiterung",
         "description": "Die Beschreibung der Erweiterung"
     },
     "appName": {
-        "message": "ATN wallet",
+        "message": "Atmatrix wallet",
         "description": "Der Name der Erweiterung"
     },
     "approved": {
@@ -75,7 +75,7 @@
         "message": "Mit Dharma ausleihen (Beta)"
     },
     "builtInCalifornia": {
-        "message": "ATNwallet wurde in Kalifornien entwickelt und gebaut."
+        "message": "Atmatrix wallet wurde in Kalifornien entwickelt und gebaut."
     },
     "buy": {
         "message": "Kaufen"
@@ -187,7 +187,7 @@
         "message": "Das Standardnetzwerk für Ether Transaktionen ist das Main Net."
     },
     "denExplainer": {
-        "message": "Dein DEN ist dein passwortverschlüsselter Speicher innerhalb von ATNwallet."
+        "message": "Dein DEN ist dein passwortverschlüsselter Speicher innerhalb von Atmatrix wallet."
     },
     "deposit": {
         "message": "Einzahlen"
@@ -215,7 +215,7 @@
         "message": "Mit ShapeShift einzahlen"
     },
     "depositShapeShiftExplainer": {
-        "message": "Wenn du andere Kryptowährungen besitzt, kannst du diese direkt mit Hilfe deiner ATNwallet Wallet handeln und einzahlen. Du benötigst keinen Account."
+        "message": "Wenn du andere Kryptowährungen besitzt, kannst du diese direkt mit Hilfe deiner Atmatrix wallet Wallet handeln und einzahlen. Du benötigst keinen Account."
     },
     "details": {
         "message": "Details"
@@ -369,7 +369,7 @@
         "message": "Account importieren"
     },
     "importAccountMsg": {
-        "message": " Importierte Accounts werden nicht mit der Seed-Wörterfolge  deines ursprünglichen ATNwallet Accounts verknüpft. Erfahre mehr über importierte Accounts."
+        "message": " Importierte Accounts werden nicht mit der Seed-Wörterfolge  deines ursprünglichen Atmatrix wallet Accounts verknüpft. Erfahre mehr über importierte Accounts."
     },
     "importAnAccount": {
         "message": "Einen Account importieren"
@@ -465,7 +465,7 @@
         "message": "Nachricht"
     },
     "metamaskDescription": {
-        "message": "ATNwallet ist ein sicherer Identitätssafe für Ethereum."
+        "message": "Atmatrix wallet ist ein sicherer Identitätssafe für Ethereum."
     },
     "min": {
         "message": "Minimum"
@@ -477,7 +477,7 @@
         "message": "Du musst mindestens 1 Token auswählen."
     },
     "needEtherInWallet": {
-        "message": "Um dezentralisierte Applikationen mit ATNwallet verwenden zu können, benötigst du Ether in deiner Wallet."
+        "message": "Um dezentralisierte Applikationen mit Atmatrix wallet verwenden zu können, benötigst du Ether in deiner Wallet."
     },
     "needImportFile": {
         "message": "Für den Import musst du eine Datei auswählen.",
@@ -797,7 +797,7 @@
         "message": "Tokensymbol"
     },
     "tokenWarning1": {
-        "message": "Behalte die Token die du mit deinem ATNwallet Account gekauft hast im Blick. Wenn du Token mit einem anderen Account gekauft hast, werden diese hier nicht angezeigt."
+        "message": "Behalte die Token die du mit deinem Atmatrix wallet Account gekauft hast im Blick. Wenn du Token mit einem anderen Account gekauft hast, werden diese hier nicht angezeigt."
     },
     "total": {
         "message": "Gesamt"
@@ -819,7 +819,7 @@
         "description": "Gefolgt von einem Link (hier) um die Tokenguthaben anzuzeigen"
     },
     "twelveWords": {
-        "message": "Diese 12 Wörter stellen die einzige Möglichkeit dar deinen ATNwallet Account wiederherzustellen. Speichere sie daher an einem sicheren und geheimen Ort."
+        "message": "Diese 12 Wörter stellen die einzige Möglichkeit dar deinen Atmatrix wallet Account wiederherzustellen. Speichere sie daher an einem sicheren und geheimen Ort."
     },
     "typePassword": {
         "message": "Passwort eingeben"
@@ -874,7 +874,7 @@
         "message": "Warnung"
     },
     "welcomeBeta": {
-        "message": "Willkommen zu ATNwallet Beta"
+        "message": "Willkommen zu Atmatrix wallet Beta"
     },
     "whatsThis": {
         "message": "Was ist das?"

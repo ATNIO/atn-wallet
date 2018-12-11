@@ -26,10 +26,10 @@ var inpageProvider = new MetamaskInpageProvider(metamaskStream)
 // setup web3
 //
 
-if (typeof window.atn3 !== 'undefined') {
-  throw new Error(`detected another atn3.
-     atn wallet will not work reliably with another atn3 extension.
-     This usually happens if you have two atn wallet installed,
+if (typeof window.atmatrix3 !== 'undefined') {
+  throw new Error(`detected another atmatrix3.
+     atmatrix wallet will not work reliably with another atmatrix3 extension.
+     This usually happens if you have two atmatrix wallet installed,
      . Please remove one and try again.`)
 }
 var web3 = new Web3(inpageProvider)

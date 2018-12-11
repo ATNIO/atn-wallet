@@ -133,11 +133,11 @@ class TransactionController extends EventEmitter {
           case 'submitted':
             return resolve(finishedTxMeta.hash)
           case 'rejected':
-            return reject(cleanErrorStack(new Error('ATN Tx Signature: User denied transaction signature.')))
+            return reject(cleanErrorStack(new Error('Atmatrix Tx Signature: User denied transaction signature.')))
           case 'failed':
             return reject(cleanErrorStack(new Error(finishedTxMeta.err.message)))
           default:
-            return reject(cleanErrorStack(new Error(`ATN Tx Signature: Unknown problem: ${JSON.stringify(finishedTxMeta.txParams)}`)))
+            return reject(cleanErrorStack(new Error(`Atmatrix Tx Signature: Unknown problem: ${JSON.stringify(finishedTxMeta.txParams)}`)))
         }
       })
     })

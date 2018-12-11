@@ -294,7 +294,7 @@ PendingTx.prototype.render = function() {
                         style: {
                             fontSize: '0.9em',
                         },
-                    }, 'Recipient address is invalid. Sending this transaction will result in a loss of ATN.') :
+                    }, 'Recipient address is invalid. Sending this transaction will result in a loss of ATX.') :
                     null,
 
                     insufficientBalance ?
@@ -331,7 +331,7 @@ PendingTx.prototype.render = function() {
                     }, 'Reset'),
 
                     // Accept Button or Buy Button
-                    insufficientBalance ? h('button.btn-green', { onClick: props.buyEth }, 'Get ATN') :
+                    insufficientBalance ? h('button.btn-green', { onClick: props.buyEth }, 'Get ATX') :
                     h('input.confirm.btn-green', {
                         type: 'submit',
                         value: 'SUBMIT',
