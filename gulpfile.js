@@ -478,7 +478,7 @@ gulp.task('lightdist',
 function zipTask(target) {
   return () => {
     return gulp.src(`dist/${target}/**`)
-    .pipe(zip(`atmatrix_wallet-${target}-${manifest.version}.zip`))
+    .pipe(zip(`atmatrix_wallet_dpos-${target}-${manifest.version}.zip`))
     .pipe(gulp.dest('builds'))
   }
 }
@@ -486,7 +486,7 @@ function zipTask(target) {
 function buildCopyTask(target) {
   return () => {
     return gulp.src(`dist/${target}/**`)
-    .pipe(gulp.dest(`builds/atmatrix_wallet-${target}-${manifest.version}`))
+    .pipe(gulp.dest(`builds/atmatrix_wallet_dpos-${target}-${manifest.version}`))
   }
 }
 
